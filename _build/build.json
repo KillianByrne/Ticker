@@ -1,0 +1,21 @@
+﻿{
+	"name": "SampleProject",
+	"buildConfig": {
+		"additionalSourceFiles": [
+			"data.json"
+		],
+		"jshintConfig": {
+			"sub": true
+		},
+		"localDependencies": [],
+		"outputCss": "app.css",
+		"outputFolder": "apps",
+		"requireCss": [],
+		"sourceFolders": {
+			"css": "css",
+			"images": "images",
+			"source": "source",
+			"templates": "templates"
+		}
+	}
+}

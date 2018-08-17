@@ -1,0 +1,12 @@
+{"columns":["text", "value", "currency", "tTime", "calculation", "percentage","redOrGreen"],
+"meta":{"location": 11, "time": 19},
+"rows":[
+{"text":"I:SPX","value":"2,513.92","currency":"USD","tTime":"19:23:15","calculation":"3.27","percentage":"0.13%","redOrGreen":true,"_rowIndex":0},
+{"text":"I:DJI","value":"23,402.11","currency":"USD","tTime":"18:50:50","calculation":"-425.08","percentage":"-1.85%","redOrGreen":false,"_rowIndex":1},
+{"text":"I:COMP","value":"6,378.85","currency":"USD","tTime":"18:50:50","calculation":"23.05","percentage":"0.36%","redOrGreen":true,"_rowIndex":2},
+{"text":"X:EURUSD","value":"284.61","currency":"USD","tTime":"18:50:50","calculation":"0.14","percentage":"0.05%","redOrGreen":true,"_rowIndex":3},
+{"text":"AAPL","value":"3.00","currency":"USD","tTime":"19:21:34","calculation":"-0.00","percentage":"-0.16%","redOrGreen":false,"_rowIndex":4},
+{"text":"TSLA","value":"25.06","currency":"USD","tTime":"19:21:34","calculation":"0.28","percentage":"1.12%","redOrGreen":true,"_rowIndex":5},
+{"text":"F:CL","value":"56.65","currency":"USD","tTime":"19:21:34","calculation":"-1.06","percentage":"-1.91%","redOrGreen":false,"_rowIndex":6},
+{"text":"F:GC","value":"1,299.77","currency":"USD","tTime":"19:21:34","calculation":"-20.47","percentage":"-1.60%","redOrGreen":false,"_rowIndex":7}
+]}

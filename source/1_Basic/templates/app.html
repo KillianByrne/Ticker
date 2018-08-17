@@ -1,0 +1,31 @@
+﻿<div class="tickerContainer">
+        {{#each this}}
+        <div class="tickerSubContainer">
+            <div class="tickerFirstSet">
+                <div class="top">
+                    <div class="text">{{this.text}}</div>
+                    <div class="value">{{this.value}}</div>
+                    <div class="currency">{{this.currency}}</div>
+                </div>
+                <div class="bottomContainer">
+                    <div class="tTime">{{this.tTime}}</div>
+                    {{#if redOrGreen}}
+                    <div class="calculation">
+                        <font color="green">{{this.calculation}}</font>
+                    </div>
+                    <div class="percentage">
+                        <font color="green">{{this.percentage}}</font>
+                    </div>
+                    {{else}}
+                    <div class="calculation">
+                        <font color="red">{{this.calculation}}</font>
+                    </div>
+                    <div class="percentage">
+                        <font color="red">{{this.percentage}}</font>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>

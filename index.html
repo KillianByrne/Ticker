@@ -1,0 +1,91 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dashboards</title>
+    <link href="favicon3.ico" rel="icon" type="image/x-icon" />
+    
+    
+    <script src="vendor/require-2.1.22.min.js"></script>
+
+    <script src="vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui-fa.css" />
+    
+
+    <style>
+        html, body {
+            min-height: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0 none;
+            overflow: hidden;
+            color: #ffffff;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        #appdiv {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        // set require config
+        require.config({
+            baseUrl: "apps/",
+			packages: [
+				{ name: "ticker", location: "1_Basic", main: "app" }
+			],
+            paths: {
+				"backbone": "vendor/backbone-1.3.3.min",
+                "jquery": "vendor/jquery-1.11.3.min",
+                "jqueryui": "vendor/jquery-ui.min",
+                "Handlebars": "vendor/handlebars-3.0.3.min",
+				"select2": "vendor/select2-4.0.1.min",
+				"underscore": "vendor/underscore-1.8.3.min",
+				
+				"dashMoment": "lib/dashMoment_4_0_0",
+				"tools": "lib/tools_4_0_0"
+            },
+            shim: {
+                "nv": {
+                    deps: ["d3"],
+                    exports: "nv"
+                },
+                "jqueryui": {
+                    deps: ["css!../css/themes/darkroom/jquery-ui.css"]
+                }
+            }
+        });
+		
+		require([
+            "ticker",
+            "Handlebars",
+            "jquery",
+			"jqueryui",
+			"select2",
+			"css!themes/kx-darkroom/jquery-ui"
+		], function (App, Handlebars) {
+		    var app = new App({
+                el: $("#appdiv")
+            });
+        });
+
+    </script>
+</head>
+<body class="kx-darkroom">
+    <div id="appdiv"></div>
+</body>
+</html>

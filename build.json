@@ -1,0 +1,26 @@
+﻿{
+	"name": "1_Basic",
+	"buildConfig": {
+		"additionalSourceFiles": ["data.json"],
+		"jshintConfig": {
+			"sub": true
+		},
+		"localDependencies": [],
+		"outputCss": "app.css",
+		"outputFolder": "apps",
+		"requireCss": [],
+		"requireModules": [
+			{
+                "id": "backbone",
+                "name": "Backbone"
+            },
+			"Handlebars"
+        ],
+		"sourceFolders": {
+			"css": "css",
+			"images": "images",
+			"source": "source",
+			"templates": "templates"
+		}
+	}
+}
